@@ -12,7 +12,7 @@ for entry in r:
     titleid = entry["titleid"]
     name = entry["name"]
     count = entry["downloads"]
-    date = datetime.datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
+    date = datetime.datetime.utcnow().strftime("%m/%d/%Y, %H:%M:%S")
     l = (titleid,name,count,date)
     try:
         f = open(f"files/{titleid}.csv","x")
