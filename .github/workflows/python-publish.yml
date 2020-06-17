@@ -26,5 +26,5 @@ jobs:
     - name: run
       run: python main.py
       
-    - name: action-push
-      uses: ludeeus/action-push@0.0.1
+    - name: Push changes
+      uses: actions-go/push@v1
