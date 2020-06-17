@@ -26,5 +26,7 @@ jobs:
     - name: run
       run: python main.py
       
-    - name: Push changes
-      uses: actions-go/push@v1
+    - name: Push new files back to master.
+      uses: mikeal/publish-to-github-action@1.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
