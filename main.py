@@ -12,7 +12,7 @@ for entry in r:
     titleid = entry["titleid"]
     name = entry["name"]
     count = entry["downloads"]
-    idd = entry["id]
+    idd = entry["id"]
     date = datetime.datetime.utcnow().strftime("%m/%d/%Y, %H:%M:%S")
     l = (titleid,name,count,date,idd)
     try:
