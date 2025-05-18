@@ -6,7 +6,7 @@ try:
 except FileExistsError:
     pass
 VHBB_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0"
-r = requests.get('https://rinnegatamante.it/vitadb/list_hbs_json.php',headers={"user-agent":VHBB_UA}).json()
+r = requests.get('https://rinnegatamante.eu/vitadb/list_hbs_json.php',headers={"user-agent":VHBB_UA}).json()
 
 for entry in r:
     titleid = entry["titleid"]
